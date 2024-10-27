@@ -1,0 +1,11 @@
+{
+    "id_customer": "ID Cliente",
+    "name": "Nombre",
+    "lastname": "Apellidos",
+    "gender": "Genero",
+    "phone": "Celular",
+    "email": "Correo electrónico",
+    "status": "Estado",
+    "created": "Creado",
+    "edited": "Editado"
+}

@@ -1,0 +1,18 @@
+{
+    "name": "Nombre",
+    "birth_year": "Año de nacimiento",
+    "eye_color" : "Color de ojos",
+    "gender" : "Genero",
+    "hair_color" : "Color de cabello",
+    "height" : "Altura",
+    "mass" : "Masa",
+    "skin_color": "Color de piel",
+    "homeworld": "Mundo natal",
+    "films": "Películas",
+    "species": "Especies",
+    "starships": "Naves estelares",
+    "vehicles": "Vehículos",
+    "url": "URL",
+    "created": "Creado",
+    "edited": "Editado"
+}

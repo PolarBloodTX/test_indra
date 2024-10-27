@@ -1,0 +1,70 @@
+
+org: techjg
+
+service: test
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+  environment:
+    PROVIDER_URL: ${env:PROVIDER_URL}
+    DB_HOST: ${env:DB_HOST}
+    DB_USER: ${env:DB_USER}
+    DB_PASSWORD: ${env:DB_PASSWORD}
+    DB_NAME: ${env:DB_NAME}
+
+functions:
+  getAll_films:
+    handler: handlers/request.getAllFilms
+    events:
+      - httpApi:
+          path: films/
+          method: get
+  get_films:
+    handler: handlers/request.getFilm
+    events:
+      - httpApi:
+          path: films/{id}
+          method: get
+  getAll_people:
+    handler: handlers/request.getAllPeople
+    events:
+      - httpApi:
+          path: people/
+          method: get
+  get_people:
+    handler: handlers/request.getPerson
+    events:
+      - httpApi:
+          path: people/{id}          
+          method: get
+
+  sql_gAllCustomer:
+    handler: handlers/customer.getAllCustomer
+    events:
+      - httpApi:
+          path: customer/
+          method: get
+  sql_gCustomer:
+    handler: handlers/customer.getCustomer
+    events:
+      - httpApi:
+          path: customer/{id}
+          method: get  
+  sql_rCustomer:
+      handler: handlers/customer.registerCustomer
+      events:
+        - httpApi:
+            path: customer/
+            method: post           
+
+package:
+  include:
+    - models/film.json
+    - models/people.json
+    - models/customer.json
+    - utils/helper.js
+    - utils/cnx.js
+
+plugins:
+  - serverless-offline

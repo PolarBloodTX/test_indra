@@ -1,0 +1,16 @@
+{
+    "title": "Titulo",
+    "episode_id": "N° Episodio",
+    "opening_crawl" : "Ratreo de apertura",
+    "director" : "Director",
+    "producer" : "Productor",
+    "release_date" : "Fecha de estreno",
+    "species": "Especies",
+    "starships": "Naves estelares",
+    "vehicles": "Vehículos",
+    "characters": "Personajes",
+    "planets": "Planetas",
+    "url": "URL",
+    "created": "Creado",
+    "edited": "Editado"
+}

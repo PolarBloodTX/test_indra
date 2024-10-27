@@ -1,0 +1,21 @@
+
+1.- Primer paso, declarar variables de entorno
+
+Datos .env
+
+
+
+PROVIDER_URL=https://swapi.py4e.com/api/{resource}
+
+DB_HOST=111.111.11.111
+DB_USER=admin
+DB_PASSWORD=1234
+DB_NAME=demo_01
+
+
+2.- Segundo paso, instalar dependencias "npm i"
+
+Listo para probar! 
+
+
+* Se utilizo la libreria nock y jest para las pruebas unitarias
